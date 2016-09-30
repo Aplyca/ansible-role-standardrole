@@ -35,6 +35,9 @@ Cretae a new role using this as boilerplate
 -------------------------------------------
 
 ```bash
+git clone git@github.com:Aplyca/ansible-role-standardrole.git NewRole;
+cd NewRole;
+rm -rf .git;
 find ./ -type f -exec sed -i '' -e 's/standardrole/newrole/g' {} \;
 find ./ -type f -exec sed -i '' -e 's/Standard Role/New Role/g' {} \;
 find ./ -type f -exec sed -i '' -e 's/StandardRole/NewRole/g' {} \;
