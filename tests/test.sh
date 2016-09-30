@@ -3,6 +3,9 @@
 
 cd $(dirname "$0") && cd ..
 
+echo "Install dependencies"
+ansible-galaxy install -r roles/requirements.yml --ignore-errors
+
 echo "Checking syntax"
 ansible-playbook -i inventories/local playbooks.yml --extra-vars="@tests/tests.yml" --connection=local --syntax-check
 
@@ -14,3 +17,6 @@ ansible-playbook -i inventories/local playbooks.yml --extra-vars="@tests/tests.y
 
 echo "Running tests"
 ansible-playbook -i inventories/local tests/playbooks.yml --connection=local
+
+echo "Removing downaloded Ansible Galaxy roles"
+rm -Rf `ls -1 -d roles/*/`

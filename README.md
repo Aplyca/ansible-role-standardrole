@@ -1,7 +1,10 @@
 Ansible Role: StandardRole
 ==========================
 
-Ansible Role that describes instances and add them to hosts group in order to be used in others playbooks.
+[![Build Status](https://travis-ci.org/Aplyca/ansible-role-standardrole.svg?branch=master)](https://travis-ci.org/Aplyca/ansible-role-standardrole)
+[![Circle CI](https://circleci.com/gh/Aplyca/ansible-role-standardrole.png?style=badge)](https://circleci.com/gh/Aplyca/ansible-role-standardrole)
+
+Ansible Role for standard creation of roles.
 
 Requirements
 ------------
@@ -20,13 +23,13 @@ ansible-galaxy install Aplyca.StandardRole
 You can add this role as a dependency for other roles, add the role to the meta/main.yml file of your own role:
 ```yaml
 dependencies:
-  - { role: Aplyca.EC2Describe }
+  - { role: Aplyca.StandardRole }
 ```
 
 Role Variables
 --------------
 
-See default variables: https://github.com/Aplyca/ansible-role-ec2describe/blob/master/defaults/main.yml
+See default variables: https://github.com/Aplyca/ansible-role-standardrole/blob/master/defaults/main.yml
 
 Dependencies
 ------------

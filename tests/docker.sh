@@ -1,5 +1,5 @@
 #!/bin/bash
-# Test EC2 Describe provisiones with Ansible
+# Test AnsibleRole with Ansible
 
 ANSIBLE_ROLE="Aplyca.StandardRole"
 DOCKER_IMAGE="ansible/ubuntu14.04-ansible"
