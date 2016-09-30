@@ -2,7 +2,7 @@ Vagrant.configure(2) do |config|
   config.vm.define "standardrole.vagrant", primary: true, autostart: true do |config_machine|
       #Assigning a provider
       config_machine.vm.provider :virtualbox do |virtualbox, override|
-        virtualbox.name = "Vagrant standardrole"
+        virtualbox.name = "Vagrant StandardRole"
 	    override.vm.box = "ubuntu/trusty64"
       end
 

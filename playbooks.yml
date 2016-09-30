@@ -1,5 +1,5 @@
 ---
-- name: Ansible Standard role
+- name: Ansible Standard Role
   hosts: all
   gather_facts: no  
   roles:

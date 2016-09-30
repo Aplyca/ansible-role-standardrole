@@ -1,5 +1,5 @@
 #!/bin/bash
-# Test AnsibleRole with Ansible
+# Test Standard Role with Ansible
 
 ANSIBLE_ROLE="Aplyca.StandardRole"
 DOCKER_IMAGE="ansible/ubuntu14.04-ansible"

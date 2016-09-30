@@ -31,6 +31,16 @@ Role Variables
 
 See default variables: https://github.com/Aplyca/ansible-role-standardrole/blob/master/defaults/main.yml
 
+Cretae a new role using this as boilerplate
+-------------------------------------------
+
+```bash
+find ./ -type f -exec sed -i '' -e 's/standardrole/newrole/g' {} \;
+find ./ -type f -exec sed -i '' -e 's/Standard Role/New Role/g' {} \;
+find ./ -type f -exec sed -i '' -e 's/StandardRole/NewRole/g' {} \;
+```
+
+
 Dependencies
 ------------
 
