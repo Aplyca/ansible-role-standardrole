@@ -1,2 +1,3 @@
 ---
-    - debug: msg="This is a task" verbosity=1
+- debug: var=standardrole verbosity=1
+  tags: vars 

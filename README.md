@@ -41,6 +41,7 @@ rm -rf .git;
 find ./ -type f -exec sed -i '' -e 's/standardrole/newrole/g' {} \;
 find ./ -type f -exec sed -i '' -e 's/Standard Role/New Role/g' {} \;
 find ./ -type f -exec sed -i '' -e 's/StandardRole/NewRole/g' {} \;
+find . -name "standardrole.*" -exec sh -c 'mv "$1" "$(dirname ${1})/newrole."${1##*.}""' _ {} \;
 ```
 
 
